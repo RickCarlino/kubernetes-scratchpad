@@ -1,5 +1,7 @@
 require "sinatra"
 
+set :bind, "0.0.0.0" # This is a Docker container, after all.
+
 visits = 0
 
 get "/" do
